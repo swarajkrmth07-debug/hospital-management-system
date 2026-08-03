@@ -134,6 +134,19 @@ int main()
         }
 
     } while(choice != 4);
-
+class patient
+    {
+    int id;
+    string name;
+    int noofdays;
+    string doctorassign;
+};
+    void input()
+{
+    cout<<"enter patient id";
+    cin<<id;
+    cout<<"enter the patient name";
+    cin<<name;
+// i will update more details ;;;;;
     return 0;
 }
