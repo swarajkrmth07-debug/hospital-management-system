@@ -5,7 +5,7 @@ using namespace std;
 class Patient
 {
 private:
-    int roomNo;
+    int roomno;
     string name;
     int age;
     string disease;
@@ -13,13 +13,13 @@ private:
 public:
     void getData();
     void displayData();
-    int getRoomNo();
+    int getRoomno();
 };
 
 void Patient::getData()
 {
     cout << "\nEnter Room Number: ";
-    cin >> roomNo;
+    cin >> roomno;
 
     cin.ignore();
 
@@ -38,7 +38,7 @@ void Patient::getData()
 void Patient::displayData()
 {
     cout << "\n-----------------------------";
-    cout << "\nRoom Number : " << roomNo;
+    cout << "\nRoom Number : " << roomno;
     cout << "\nPatient Name: " << name;
     cout << "\nAge         : " << age;
     cout << "\nDisease     : " << disease;
@@ -47,7 +47,7 @@ void Patient::displayData()
 
 int Patient::getRoomNo()
 {
-    return roomNo;
+    return roomno;
 }
 
 int main()
@@ -111,7 +111,7 @@ int main()
 
                 for(i = 0; i < n; i++)
                 {
-                    if(p[i].getRoomNo() == room)
+                    if(p[i].getRoomno() == room)
                     {
                         p[i].displayData();
                         found = true;
